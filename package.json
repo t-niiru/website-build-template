@@ -11,7 +11,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss src/assets/stylesheets/scss/style.scss src/assets/stylesheets/style.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "sync": "browser-sync start --config bs-config.js",
+    "dev": "concurrently --kill-others \"npm run watch-css\" \"npm run sync\""
   },
   "repository": {
     "type": "git",
