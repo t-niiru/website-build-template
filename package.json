@@ -10,17 +10,18 @@
   "devDependencies": {
     "autoprefixer": "^9.1.5",
     "browsersync-ssi": "^0.2.4",
-    "csscomb": "^4.2.0",
     "node-sass-import": "^2.0.1",
+    "nodemon": "^1.18.4",
     "npm-run-all": "^4.1.3",
     "postcss": "^7.0.2",
     "postcss-cli": "^6.0.0"
   },
   "scripts": {
-    "css:build": "node-sass -w --output-style expanded --source-map true --source-map-contents true --precision 6 --include-path scss src/assets/stylesheets/scss/style.scss src/assets/stylesheets/style.css",
-    "css:autoprefixer": "postcss -w --config ./config/postcss.config.js src/assets/stylesheets/style.css -d src/assets/stylesheets/",
+    "css:build": "node-sass --include-path scss --output-style compressed --source-map true --source-map-contents true --precision 6 src/assets/stylesheets/scss/style.scss src/assets/stylesheets/style.css",
+    "css:autoprefixer": "postcss --config ./config/postcss.config.js --no-map src/assets/stylesheets/style.css -d src/assets/stylesheets/",
+    "watch:autoprefixer": "nodemon -e scss -x \"npm run css:autoprefixer \"",
     "server": "browser-sync start --config ./config/bs-config.js",
-    "dev": "npm-run-all -p css:* server"
+    "dev": "npm-run-all -p css:build watch:autoprefixer server"
   },
   "repository": {
     "type": "git",
