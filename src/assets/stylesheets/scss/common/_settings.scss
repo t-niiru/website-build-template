@@ -1,0 +1,115 @@
+$use_html5: true;
+
+$fontSize: 1rem;
+$fontColor: #000;
+$baseLineHeight: 1.7;
+$subBaseLineHeight: 2;
+
+$gothic: "Roboto", "Noto Sans", Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$serif: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+
+// color
+$mainColor: #000;
+$subMainColor: #333;
+$baseColor: #fff;
+$subBaseColor: #eee;
+$accentColor: #ff8b1a;
+
+$defaultLinkColor: $fontColor;
+$rolloverLinkColor: $mainColor;
+
+//base-color
+$black: #000;
+$base-white: #fff;
+$light-white: #f0f0f0;
+$base-gray: #2a2a2a;
+$light-gray: #333;
+$light-gray2: #4d4d4d;
+$light-gray3: #999;
+$gray: #222;
+$gray2: #6a6a6a;
+$red: #ff0000;
+$orange: #ee7821;
+$nav-color: #f0f0f0;
+$inlin-link: #2fbfff;
+$btn-back: #3e9bc4;
+$btn-back-hover: #388cb2;
+$btn-back-del: #e23108;
+$c-primary: #3e9bc4;
+$c-light_primary: #ECF5FA;
+$c-danger: #f44336;
+$c-light_black: #2a2a2a;
+$c-dark_gray: #333;
+$c-gray: #666;
+$c-light_gray: #ccc;
+$c-dark_white: #f0f0f0;
+$c-white: #fff;
+$c-blue: #3e9bc4;
+$black : black;
+$white: white;
+$bg: #009eb2;
+$bg2: #db6f74;
+$btn: #00838f;
+
+//background
+$opacity_back04: rgba(0,0,0,0.4);
+$opacity_back05: rgba(0,0,0,0.5);
+$opacity_back06: rgba(0,0,0,0.6);
+
+// width, height
+$width_main: 920px;
+$width_slider: 1900px;
+$height_slider: 620px;
+$width_sidenavi: 200px;
+$width_side: 5%;
+$mb_contents: 100px;
+
+// $flexslider_width: $width_main
+$flexslider_width_gallery: 680px;
+$flexslider_height: 230px;
+$flexslider_width_li: 172px;
+$flexslider_width_pdL: 15px;
+
+// transition
+$transition_edit: .2s;
+
+//border-radius
+$radius_default: 4px;
+$radius_middle: 10px;
+$radiun_max: 20px;
+
+// breakpoint
+// @media #{$bp_min-bp1}のインデントの中にスタイルを記述
+$phone: 600px;
+$tablet: 992px;
+$pc : 1200px;
+
+// デバイスの向き
+// 横向き
+$landscape_style: "screen and (orientation:landscape)";
+
+//スマホ用
+//600px以下
+$phone_style_max: "screen and (max-width:" + $phone + ")";
+//601px以上
+$phone_style_min: "screen and (min-width:" + ($phone + 1px) + ")";
+
+//タブレット用
+//992px以下
+$tablet_style_max: "screen and (max-width:" + $tablet + ")";
+//993px以上
+$tablet_style_min: "screen and (min-width:" + ($tablet + 1px) + ")";
+
+//タブレット用（横）
+//993px以上1200px以下
+$tablet_width_style: "screen and (min-width:" + ($tablet + 1px) + ") and (max-width:" + $pc + ")";
+
+//PC用
+//1200px以下
+$pc_style_max: "screen and (max-width:" + $pc + ")";
+//1201px以上
+$pc_style_min: "screen and (min-width:" + ($pc + 1px) + ")";
+
+// z-index(右側が上層)
+// z-index: index($z, linkbox) で呼び出し
+$z : linkbox;
