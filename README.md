@@ -1,8 +1,9 @@
 # npm-scripts scss build
 
+only npm scripts  
+
 ## feature
- - scss build  
- - css minify  
+ - scss build 
  - css autoprefix  
 
 ## コマンド
