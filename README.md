@@ -43,12 +43,12 @@ docs<公開ディレクトリ>
 ```
 
 ## 公開
-// あらかじめdocsディレクトリの中をクリーンアップ
-$ rm -rf docs/*
+// あらかじめdocsディレクトリの中をクリーンアップ  
+`$ rm -rf docs/*`
 
-// assetsの静的ファイルを設置
-$ cp -R src/assets/images/ docs/assets/images
-$ cp -R src/assets/stylesheets/style.css docs/assets/stylesheets/
+// assetsの静的ファイルを設置  
+`$ cp -R src/assets/images/ docs/assets/images`  
+`$ cp -R src/assets/stylesheets/style.css docs/assets/stylesheets/`
 
-// index.htmlを設置
-$ cp -R src/index.html docs
+// index.htmlを設置  
+`$ cp -R src/index.html docs`
