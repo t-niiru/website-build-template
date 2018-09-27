@@ -2,7 +2,6 @@
   "name": "website-build-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "css:build": "node-sass -w --include-path scss --output-style expanded --source-map true --source-map-contents true --precision 6 src/assets/stylesheets/scss/style.scss src/assets/stylesheets/style.css",
     "css:autoprefixer": "postcss --config ./config/postcss.config.js --no-map src/assets/stylesheets/style.css -d src/assets/stylesheets/",

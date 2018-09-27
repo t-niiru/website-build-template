@@ -35,7 +35,7 @@ src<開発ディレクトリ>
 docs<公開ディレクトリ>
 ├── assets
 │   └── stylesheets
-│       ├── style.css
+│       └── style.css
 ├── contents.html
 ├── footer.html
 ├── header.html
@@ -43,12 +43,12 @@ docs<公開ディレクトリ>
 ```
 
 ## 公開
-// あらかじめdocsディレクトリの中をクリーンアップ  
+### あらかじめdocsディレクトリの中をクリーンアップ  
 `$ rm -rf docs/*`
 
-// assetsの静的ファイルを設置  
+### assetsの静的ファイルを設置  
 `$ cp -R src/assets/images/ docs/assets/images`  
 `$ cp -R src/assets/stylesheets/style.css docs/assets/stylesheets/`
 
-// index.htmlを設置  
+### index.htmlを設置  
 `$ cp -R src/index.html docs`
