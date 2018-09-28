@@ -1,4 +1,10 @@
-# toukikun LP
+# npm-scripts scss build
+
+only npm scripts  
+
+## feature
+ - scss build 
+ - css autoprefix  
 
 ## コマンド
 
