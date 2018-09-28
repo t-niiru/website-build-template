@@ -1,10 +1,4 @@
-# npm-scripts scss build
-
-only npm scripts  
-
-## feature
- - scss build 
- - css autoprefix  
+# toukikun LP
 
 ## コマンド
 
@@ -18,13 +12,14 @@ only npm scripts
 ```
 src<開発ディレクトリ>
 ├── assets
+│   ├── images
 │   └── stylesheets
 │       ├── scss
 │       │   ├── common
 │       │   │   ├── _format.scss
 │       │   │   └── _settings.scss
 │       │   ├── componets
-│       │   │   └── _index.scss
+│       │   │   └── _example.scss
 │       │   ├── mixins
 │       │   │   ├── _example.scss
 │       │   │   └── _mixins.scss
@@ -34,21 +29,12 @@ src<開発ディレクトリ>
 └── index.html
 docs<公開ディレクトリ>
 ├── assets
+│   ├── images
 │   └── stylesheets
 │       └── style.css
-├── contents.html
-├── footer.html
-├── header.html
 └── index.html
 ```
 
 ## 公開
-### あらかじめdocsディレクトリの中をクリーンアップ  
-`$ rm -rf docs/*`
-
-### assetsの静的ファイルを設置  
-`$ cp -R src/assets/images/ docs/assets/images`  
-`$ cp -R src/assets/stylesheets/style.css docs/assets/stylesheets/`
-
-### index.htmlを設置  
-`$ cp -R src/index.html docs`
+### 公開用ディレクトリにファイル群をコピーする
+`npm run build`

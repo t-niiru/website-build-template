@@ -8,7 +8,13 @@
     "watch:autoprefixer": "nodemon -e scss -x \"npm run css:autoprefixer \"",
     "server": "browser-sync start --config ./config/bs-config.js",
     "dev": "npm-run-all -p css:build watch:autoprefixer server",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "build:clean": "rm -rf docs/assets/*",
+    "build:assets": "cp -vr src/assets/ docs/assets",
+    "del:scss": "rm -rf docs/assets/stylesheets/scss",
+    "del:map": "rm -rf docs/assets/stylesheets/*.map",
+    "build:index": "cp -R src/index.html docs",
+    "build": "npm-run-all -p build:clean build:index build:assets del:*"
   },
   "dependencies": {},
   "devDependencies": {
